@@ -1,11 +1,6 @@
 <template>
   <div class="medicalSummary">
-    <van-nav-bar
-      class="head_nav"
-      left-text="返回"
-      left-arrow
-      @click-left="back"
-    >
+    <van-nav-bar class="head_nav" left-text="返回" left-arrow @click-left="back">
       <van-search v-model="value" placeholder="请输入搜索关键词" slot="title" />
     </van-nav-bar>
     <!-- <div style="width:400px;height:200px" @click="cshow"></div> -->
@@ -18,21 +13,43 @@
         </div>
       </div>
     </div>
-    <van-tabs v-model="active" id="tabs">
+    <van-tabs
+      v-model="active"
+      id="tabs"
+      title-active-color="#7c322f"
+      color="#7c322f"
+      line-height="2"
+      title-inactive-color="#333333"
+    >
       <van-tab title="病案总结">
         <div class="information">
           <div class="i_head">
             <div>
               <div class="ih_title">流行性感冒</div>
-              <div><span>时间：</span><span>2019年4月14日</span></div>
+              <div>
+                <span>时间：</span>
+                <span>2019年4月14日</span>
+              </div>
             </div>
             <div>
-              <div><span>姓名：</span><span>张丽丽</span></div>
-              <div><span>性别：</span><span>女</span></div>
-              <div><span>职业：</span><span>在校学生</span></div>
+              <div>
+                <span>姓名：</span>
+                <span>张丽丽</span>
+              </div>
+              <div>
+                <span>性别：</span>
+                <span>女</span>
+              </div>
+              <div>
+                <span>职业：</span>
+                <span>在校学生</span>
+              </div>
             </div>
             <div>
-              <div><span>身份证：</span><span>342113199403054822</span></div>
+              <div>
+                <span>身份证：</span>
+                <span>342113199403054822</span>
+              </div>
             </div>
           </div>
           <van-divider />
@@ -47,20 +64,35 @@
         <div class="information">
           <div class="i_head">
             <div>
-              <div><span>姓名：</span><span>张丽丽</span></div>
-              <div><span>时间：</span><span>2019年4月14日</span></div>
+              <div>
+                <span>姓名：</span>
+                <span>张丽丽</span>
+              </div>
+              <div>
+                <span>时间：</span>
+                <span>2019年4月14日</span>
+              </div>
             </div>
             <div>
-              <div><span>性别：</span><span>女</span></div>
-              <div><span>职业：</span><span>在校学生</span></div>
+              <div>
+                <span>性别：</span>
+                <span>女</span>
+              </div>
+              <div>
+                <span>职业：</span>
+                <span>在校学生</span>
+              </div>
             </div>
             <div>
-              <div><span>身份证：</span><span>342113199403054822</span></div>
+              <div>
+                <span>身份证：</span>
+                <span>342113199403054822</span>
+              </div>
             </div>
           </div>
           <van-divider />
           <div class="i_footter">
-            <span class="f_info">查看详情</span>
+            <span class="f_info" @click="info">查看详情</span>
           </div>
         </div>
       </van-tab>
@@ -68,15 +100,30 @@
         <div class="information">
           <div class="i_head">
             <div>
-              <div class="ih_title"><span>姓名：</span><span>张丽丽</span></div>
-              <div><span>时间：</span><span>2019年4月14日</span></div>
+              <div class="ih_title">
+                <span>姓名：</span>
+                <span>张丽丽</span>
+              </div>
+              <div>
+                <span>时间：</span>
+                <span>2019年4月14日</span>
+              </div>
             </div>
             <div>
-              <div><span>性别：</span><span>女</span></div>
-              <div><span>职业：</span><span>在校学生</span></div>
+              <div>
+                <span>性别：</span>
+                <span>女</span>
+              </div>
+              <div>
+                <span>职业：</span>
+                <span>在校学生</span>
+              </div>
             </div>
             <div>
-              <div><span>身份证：</span><span>342113199403054822</span></div>
+              <div>
+                <span>身份证：</span>
+                <span>342113199403054822</span>
+              </div>
             </div>
           </div>
           <van-divider />
@@ -98,58 +145,18 @@
           <template #content>
             <van-collapse v-model="activeNames" accordion>
               <van-collapse-item title="标题1" name="1">
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
               </van-collapse-item>
               <van-collapse-item title="标题2" name="2">
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
-                <van-cell
-                  title="单元格"
-                  icon-prefix="iconfont icondashujukeshihuaico-"
-                  icon="icondashujukeshihuaico-"
-                />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
+                <van-cell title="单元格" icon-prefix="iconfont icondingdan" icon="icondingdan" />
               </van-collapse-item>
             </van-collapse>
             <!-- <van-image
@@ -159,7 +166,7 @@
             <van-image
               v-if="active_select === 1"
               src="https://img.yzcdn.cn/vant/apple-2.jpg"
-            /> -->
+            />-->
           </template>
         </van-tree-select>
       </div>
@@ -170,18 +177,12 @@
           <div
             @click="state = true"
             :class="state === true ? 'span_sidebar' : 'span_item'"
-          >
-            {{ currentDate | formatTime }}
-          </div>
-          <div class="c_conter">
-            至
-          </div>
+          >{{ currentDate | formatTime }}</div>
+          <div class="c_conter">至</div>
           <div
             @click="state = false"
             :class="state != true ? 'span_sidebar' : 'span_item'"
-          >
-            {{ End_date | formatTime }}
-          </div>
+          >{{ End_date | formatTime }}</div>
         </div>
         <van-datetime-picker
           v-show="state"
@@ -199,7 +200,10 @@
           :max-date="maxDate"
           :formatter="formatter"
         />
-        <div class="footer_div"><span>取消</span><span>确定</span></div>
+        <div class="footer_div">
+          <span>取消</span>
+          <span>确定</span>
+        </div>
       </div>
     </van-action-sheet>
   </div>
@@ -243,6 +247,9 @@ export default {
       } else {
         this.$router.go(-1);
       }
+    },
+    info(){
+      console.log(1)
     },
     formatter(type, val) {
       if (type === "year") {
@@ -290,7 +297,7 @@ export default {
   .tabs_item {
     float: right;
     width: 35%;
-    height: 44px;
+    height: 40px;
     background: #fff;
     overflow: hidden;
     text-align: right;
@@ -303,8 +310,8 @@ export default {
       justify-content: space-between;
       .r_line {
         width: 2px;
-        height: 21px;
-        background: #f5f5f5;
+        height: 20px;
+        background: rgba(204, 204, 204, 0.6);
       }
       .r_iconfont {
         display: inline-block;
@@ -321,11 +328,13 @@ export default {
     .van-tabs__wrap {
       pointer-events: all;
       width: 65%;
+      height: 40px;
     }
     .van-tabs__wrap::after {
       border-width: 0;
     }
     .van-tabs__content {
+      pointer-events: all;
       padding: 10px 0;
       width: 100%;
       float: none;

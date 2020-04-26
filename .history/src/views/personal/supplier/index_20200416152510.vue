@@ -1,0 +1,146 @@
+<template>
+  <div class="supplier">
+    <van-nav-bar class="head_nav" left-text="返回" title="我的供应商" left-arrow @click-left="back" />
+    <div class="supplier_main">
+      <van-cell
+        center
+        icon="icondianpu"
+        icon-prefix="iconfont icondianpu"
+        label="地址：上海市闵行区上海康城小区康城道80号503室"
+      >
+        <template #title>
+          <span class="custom-title">上海中药材有限责任公司</span>
+        </template>
+        <template #right-icon>
+          <van-icon name="iconshanchu1" class-prefix="iconfont iconshanchu1" />
+        </template>
+      </van-cell>
+      <van-cell
+        center
+        icon="icondianpu"
+        icon-prefix="iconfont icondianpu"
+        label="地址：上海市闵行区上海康城小区康城道80号503室"
+      >
+        <template #title>
+          <span class="custom-title">上海中药材有限责任公司</span>
+        </template>
+        <template #right-icon>
+          <van-icon name="iconshanchu1" class-prefix="iconfont iconshanchu1" />
+        </template>
+      </van-cell>
+      <van-cell
+        center
+        icon="icondianpu"
+        icon-prefix="iconfont icondianpu"
+        label="地址：上海市闵行区上海康城小区康城道80号503室"
+      >
+        <template #title>
+          <span class="custom-title">上海中药材有限责任公司</span>
+        </template>
+        <template #right-icon>
+          <van-icon name="iconshanchu1" class-prefix="iconfont iconshanchu1" />
+        </template>
+      </van-cell>
+      <van-cell
+        center
+        icon="icondianpu"
+        icon-prefix="iconfont icondianpu"
+        label="地址：上海市闵行区上海康城小区康城道80号503室"
+      >
+        <template #title>
+          <span class="custom-title">上海中药材有限责任公司</span>
+        </template>
+        <template #right-icon>
+          <van-icon name="iconshanchu1" class-prefix="iconfont iconshanchu1" />
+        </template>
+      </van-cell>
+    </div>
+    <div class="footer_div">
+      <span>添加供应商</span>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    back() {
+      if (window.history.length <= 1) {
+        this.$router.push({ path: "/" });
+        return false;
+      } else {
+        this.$router.go(-1);
+      }
+    },
+    goPath(path) {
+      this.$router.push(path);
+    }
+  }
+};
+</script>
+<style lang="scss" scoped>
+.supplier {
+  width: 100%;
+  height: 100%;
+  .supplier_main {
+    width: 100%;
+    height: auto;
+    .van-cell {
+      margin: 15px 0 0;
+      padding: 10px 15px;
+      i:first-child {
+        color: #c8a060;
+        font-size: 25px;
+      }
+      .van-cell__left-icon {
+        margin-right: 15px;
+      }
+      i {
+        color: #b2b2b2;
+        font-size: 25px;
+      }
+      .van-cell__title {
+        .custom-title {
+          font-size: 15px;
+          color: #000000;
+          margin-right: 10px;
+        }
+        .phone {
+          font-size: 12px;
+          color: #666666;
+        }
+        .van-cell__label {
+          font-size: 13px;
+          color: #000000;
+        }
+        .orders_id {
+          font-size: 12px;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .footer_div {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    height: auto;
+    span {
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      height: 45px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 40px;
+      background-image: linear-gradient(90deg, #e6c469 0%, #c8a060 100%),
+        linear-gradient(#ffffff, #ffffff);
+      background-blend-mode: normal, normal;
+    }
+  }
+}
+</style>

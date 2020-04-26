@@ -7,7 +7,7 @@
       @click-left="back"
     />
     <div class="attachedCopies_content">
-      <div @click="goPath('/ImageUpload')">
+      <div @click="goPath('attachedCopies/ImageUpload')">
         <div>
           <van-icon
             class-prefix="iconfont iconwenjianjia"
@@ -19,7 +19,7 @@
             <div>病例记录</div>
             <div>默认文件夹</div>
           </div>
-          <div @click.stop="goPath('/permissions')">
+          <div @click.stop="goPath('attachedCopies/permissions')">
             <van-icon class-prefix="iconfont iconsuoguan" name="iconsuoguan" />
             <div>权限设置</div>
           </div>

@@ -10,7 +10,7 @@
       <div class="h_consulting_title">
         <span>上次咨询</span><span>查看全部<van-icon name="arrow"/></span>
       </div>
-      <div class="h_consulting_div" @click="goPath('/chat')">
+      <div class="h_consulting_div" @click="goPath('/healthConsultant/chat')">
         <div class="h_head">
           <div class="h_head_image">
             <van-image
@@ -34,7 +34,7 @@
     </div>
     <div class="h_patients_with">
       <div class="h_patients_title">
-        <span>最近患者</span><span @click="goPath('/patientList')">查看全部<van-icon name="arrow"/></span>
+        <span>最近患者</span><span @click="goPath('/healthConsultant/patientList')">查看全部<van-icon name="arrow"/></span>
       </div>
       <div class="h_patients_content">
         <swiper :options="swiperOption" ref="mySwiper" class="area">

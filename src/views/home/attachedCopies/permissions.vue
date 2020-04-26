@@ -7,7 +7,7 @@
       @click-left="back"
     />
     <div class="members">
-      <van-cell title="成员及权限" is-link to='/members'>
+      <van-cell title="成员及权限" is-link to='/attachedCopies/members'>
         <template #label>
           <div class="members_item">
             <van-image
@@ -47,14 +47,14 @@
           </div>
         </template>
       </van-cell>
-      <van-cell value="添加成员"  to='/membersAdd'/>
+      <van-cell value="添加成员"  to='/attachedCopies/membersAdd'/>
     </div>
     <div>
       <van-cell value="默认仅查看" />
       <div class="item_font">医生收到文件后仅可查看，不会泄露你的隐私</div>
     </div>
     <div>
-      <van-cell value="默认颜色" is-link />
+      <van-cell title="默认时间" value="3天"  is-link />
       <div class="item_font">医生只可以在选择的时间内查看文件</div>
     </div>
   </div>

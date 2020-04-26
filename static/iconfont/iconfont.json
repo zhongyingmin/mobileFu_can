@@ -6,6 +6,167 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "14068678",
+      "name": "待收货_复制",
+      "font_class": "daishouhuo_fuzhi",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "14070002",
+      "name": "待付款_复制",
+      "font_class": "daifukuan_fuzhi",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "14070012",
+      "name": "售后_复制",
+      "font_class": "shouhou_fuzhi",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "14070044",
+      "name": "待发货_复制",
+      "font_class": "daifahuo_fuzhi",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "7296278",
+      "name": "商店",
+      "font_class": "shangdian",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "8458775",
+      "name": "验证码 ",
+      "font_class": "yanzhengma",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7550251",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "10735008",
+      "name": "发货 (1)",
+      "font_class": "fahuo",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "594384",
+      "name": "照片",
+      "font_class": "zhaopian",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "7093569",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "eb88",
+      "unicode_decimal": 60296
+    },
+    {
+      "icon_id": "1408411",
+      "name": "滑动",
+      "font_class": "xiangzuo-huadong",
+      "unicode": "e714",
+      "unicode_decimal": 59156
+    },
+    {
+      "icon_id": "7550202",
+      "name": "上",
+      "font_class": "shang",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "9270692",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "7550256",
+      "name": "扫一扫",
+      "font_class": "saoyisao",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "7550199",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "13801654",
+      "name": "名厂名药",
+      "font_class": "zhongyaobaozhuang",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "13801578",
+      "name": "康复器具",
+      "font_class": "kangfuyixueke",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "13801609",
+      "name": "文化周边",
+      "font_class": "jiankanghuodong",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "13801613",
+      "name": "养生膳食",
+      "font_class": "zhongyike",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "13801076",
+      "name": "草药",
+      "font_class": "caoyaofei",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "13800887",
+      "name": "膏方定制",
+      "font_class": "gaofangdingzhi",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "13798968",
+      "name": "药房",
+      "font_class": "yaofang",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "13798969",
+      "name": "活动",
+      "font_class": "huodong",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
       "icon_id": "11330560",
       "name": "盾牌 (2)",
       "font_class": "dunpai",
@@ -60,34 +221,6 @@
       "font_class": "jinduxian",
       "unicode": "e622",
       "unicode_decimal": 58914
-    },
-    {
-      "icon_id": "13063183",
-      "name": "待收货",
-      "font_class": "daishouhuo",
-      "unicode": "e623",
-      "unicode_decimal": 58915
-    },
-    {
-      "icon_id": "13063184",
-      "name": "待付款",
-      "font_class": "daifukuan",
-      "unicode": "e624",
-      "unicode_decimal": 58916
-    },
-    {
-      "icon_id": "13063185",
-      "name": "待发货",
-      "font_class": "daifahuo",
-      "unicode": "e625",
-      "unicode_decimal": 58917
-    },
-    {
-      "icon_id": "13063186",
-      "name": "售后",
-      "font_class": "shouhou1",
-      "unicode": "e627",
-      "unicode_decimal": 58919
     },
     {
       "icon_id": "13063188",
